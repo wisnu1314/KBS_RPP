@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angka Harapan Hidup</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      height: 720px;
+      align-items: center;
+      background-color: #adadad;
+    }
+    #parameter {
+      display: flex;
+      justify-content: center;
+      height: 9px;
+    }
+    .gender-radio {
+      height: 40px;
+      margin-x: 1%;
+      gap: 3px;
+    }
+    #pria-radio {
+      gap: 3px;
+    }
+    #wanita-radio {
+      gap: 3px;
+    }
+    #Submit {
+      margin-top: 5px;
+    }
+    .predoutput {
+      text-align: center;
+      display: block;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div>
+      <div>
+        <h1>Angka Harapan Hidup di Berbagai Provinsi di Indonesia</h1>
+        <form
+          id="formm"
+          name="form"
+          ,
+          method="POST"
+          ,
+          style="text-align: center"
+        >
+          <br />
+          <p id="parameter">Tahun</p>
+          <input type="number" name="tahun" value="2010" required min="2010" />
+          <br /><br />
+          <p id="parameter">Provinsi</p>
+          <select name="provinsi" id="provinsi-select" required>
+            <option value="Aceh" selected>Aceh</option>
+            <option value="Sumatera Utara">Sumatera Utara</option>
+            <option value="Sumatera Barat">Sumatera Barat</option>
+            <option value="Riau">Riau</option>
+            <option value="Jambi">Jambi</option>
+            <option value="Sumatera Selatan">Sumatera Selatan</option>
+            <option value="Bengkulu">Bengkulu</option>
+            <option value="Lampung">Lampung</option>
+            <option value="Kep. Bangka Belitung">Kep. Bangka Belitung</option>
+            <option value="Kep. Riau">Kep. Riau</option>
+            <option value="Dki Jakarta">Dki Jakarta</option>
+            <option value="Jawa Barat">Jawa Barat</option>
+            <option value="Jawa Tengah">Jawa Tengah</option>
+            <option value="Di Yogyakarta">DI Yogyakarta</option>
+            <option value="Jawa Timur">Jawa Timur</option>
+            <option value="Banten">Banten</option>
+            <option value="Bali">Bali</option>
+            <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+            <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+            <option value="Kalimantan Barat">Kalimantan Barat</option>
+            <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+            <option value="Kalimantan Timur">Kalimantan Timur</option>
+            <option value="Kalimantan Utara">Kalimantan Utara</option>
+            <option value="Sulawesi Utara">Sulawesi Utara</option>
+            <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+            <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+            <option value="Gorontalo">Gorontalo</option>
+            <option value="Sulawesi Barat">Sulawesi Barat</option>
+            <option value="Maluku">Maluku</option>
+            <option value="Maluku Utara">Maluku Utara</option>
+            <option value="Papua Barat">Papua Barat</option>
+            <option value="Papua">Papua</option>
+          </select>
+          <br />
+          <p id="parameter">Gender</p>
+          <div class="gender-radio">
+            <div id="pria-radio">
+              <input
+                type="radio"
+                id="Pria"
+                name="gender"
+                value="pria"
+                required
+                checked
+              />
+              <label for="Pria">Pria</label><br />
+            </div>
+            <div id="wanita-radio">
+              <input type="radio" id="Wanita" name="gender" value="wanita" />  
+              <label for="Wanita">Wanita</label><br />
+            </div>
+          </div>
+          <button id="Submit" value="Submit">Run</button>
+        </form>
+      </div>
+      <div><p class="predoutput">{{ output }}</p></div>
+    </div>
+  </body>
+  <script></script>
+</html>
