@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT app:rpp-life-expectancy-indonesia
+web: gunicorn --bind 0.0.0.0:$PORT app:app:app
